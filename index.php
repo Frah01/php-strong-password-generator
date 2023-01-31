@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="row bg-white p-5">
-            <div class="col-6 d-flex justify-content-center">
-                <h3>Scegli la lunghezza della tua password</h3>
+            <div class="col-6 text-center d-flex justify-content-center">
+                <h3>Scegli la lunghezza della tua password (Massimo 50 caratteri)</h3>
             </div>
             <div class="col-6 d-flex justify-content-center">
                 <form action="./displaypassw.php" method="GET">
