@@ -22,20 +22,11 @@ include __DIR__ . '/functions.php'
                 <h3>Lunghezza password</h3>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <form action="./index.php" method="GET">
+                <form action="./displaypassw.php" method="GET">
                     <div class="form-group">
                         <input class="form-control" type="number" name="password">
                     </div>
-                    <div class="form-group">
-                        <div>
-                            <h3>La tua password</h3>
-                            <?php
 
-                            echo randomGen($passwGen, $randomText);
-
-                            ?>
-                        </div>
-                    </div>
                 </form>
             </div>
         </div>
