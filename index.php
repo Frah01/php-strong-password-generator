@@ -1,7 +1,9 @@
 <?php 
 $passwGen = $_GET['password'];
-function passwordGen($passwGen){
-    echo substr(sha1(mt_rand()),17,$_GET['password']); 
+$randomText = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+function randomGen( $passwGen , $randomText ) {
+    return substr( str_shuffle( $randomText ), 0,$_GET['password']);
 }
 
 ?>
@@ -29,7 +31,7 @@ function passwordGen($passwGen){
                     <div class="form-group" >
                        <?php 
                        
-                       echo passwordGen($passwGen);
+                       echo randomGen($passwGen , $randomText);
 
                        ?>
                     </div>
