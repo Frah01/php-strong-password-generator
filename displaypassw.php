@@ -6,7 +6,7 @@ $_SESSION['password'] = $_GET['password'];
 
 
 
-if (empty($_SESSION['password']) || $_SESSION['password'] < 0) {
+if (empty($_SESSION['password']) || $_SESSION['password'] < 0 || $_GET['password'] > 50) {
     header('Location:./index.php');
 }
 ?>
