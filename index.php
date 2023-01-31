@@ -1,3 +1,11 @@
+<?php 
+$passwGen = $_GET['password'];
+function passwordGen($passwGen){
+    echo substr(sha1(mt_rand()),17,$_GET['password']); 
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +16,26 @@
     <title>Strong password generator</title>
 </head>
 <body>
-    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+                <h3>Lunghezza password</h3>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <form action="./index.php" method="GET" >
+                    <div class="form-group" >
+                        <input class="form-control" type="number" name="password">
+                    </div>
+                    <div class="form-group" >
+                       <?php 
+                       
+                       echo passwordGen($passwGen);
+
+                       ?>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
