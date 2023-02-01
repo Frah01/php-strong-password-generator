@@ -26,7 +26,7 @@
             <div class="col-6 d-flex justify-content-center">
                 <form action="./displaypassw.php" method="GET">
                     <div class="form-group d-flex">
-                        <input class="form-control" type="number" name="password">
+                        <input class="form-control" type="number" name="password" placeholder="Lunghezza Password">
                         <button type="submit" class="btn btn-dark mx-2">Invia</button>
                     </div>
                 </form>

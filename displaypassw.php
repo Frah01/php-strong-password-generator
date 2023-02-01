@@ -31,12 +31,9 @@ if (empty($_SESSION['password']) || $_SESSION['password'] < 0 || $_GET['password
                     <h3>Strong Password Generator</h3>
                 </div>
                 <div class="text-center bg-white d-flex justify-content-center p-3">
-                    <div>
-                        <h3>La tua Password è :</h3>
-                    </div>
-                    <div class="mx-2">
-                        <h3><?php echo randomGen($passwGen, $randomText); ?>
-                        </h3>
+                    <div class="alert alert-primary d-flex justify-content-around">
+                        <h3 class="mx-2">La tua Password è :</h3>
+                        <h3><?php echo randomGen($passwGen, $randomText); ?></h3>
                     </div>
                 </div>
             </div>
